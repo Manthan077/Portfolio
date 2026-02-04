@@ -1,0 +1,40 @@
+@import "tailwindcss";
+
+:root {
+  color-scheme: dark;
+}
+
+/* Base body text */
+body {
+  background-color: #020617;
+  color: #e5e7eb;
+  font-feature-settings: "liga" 1, "calt" 1;
+}
+
+/* Headings */
+h1, h2, h3, h4 {
+  letter-spacing: -0.02em;
+}
+
+/* Paragraph rhythm */
+p {
+  line-height: 1.75;
+}
+
+/* Softer default text color */
+.text-muted {
+  color: #94a3b8;
+}
+
+/* Better card feel */
+.card {
+  border-radius: 16px;
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.08);
+}
+
+/* Section spacing consistency */
+.section {
+  padding-top: 9rem;
+  padding-bottom: 9rem;
+}
