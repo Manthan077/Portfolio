@@ -1,16 +1,122 @@
-# React + Vite
+# Manthan Sharma — Developer Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, performance-focused personal portfolio showcasing my work in **Full Stack Development**, **GenAI**, and **System Design**.
 
-Currently, two official plugins are available:
+This portfolio highlights real-world engineering projects with detailed case studies, clean UI, and a production-ready contact system.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🌐 Live Demo
 
-## React Compiler
+🔗 Portfolio Website: https://your-live-url-here
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## ✨ Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- ⚡ Fast and lightweight (React + Vite)
+- 🎨 Consistent dark theme with modern UI
+- 📱 Fully responsive across devices
+- 🧠 Project case studies with problem → solution → architecture → impact
+- 📩 Working contact form with Gmail integration
+- 🔒 Rate-limited backend to prevent spam / DoS attacks
+- 🧭 Scroll position restored when navigating between projects
+
+---
+
+## 🛠 Tech Stack
+
+### Frontend
+- React
+- Vite
+- Tailwind CSS
+- Framer Motion
+- React Router DOM
+
+### Backend (Contact Form API)
+- Node.js
+- Express
+- Nodemailer (Gmail App Password)
+- dotenv
+- Rate Limiting
+
+---
+
+## 📂 Project Structure
+```
+src/
+├── components/ # Navbar, Footer, reusable UI
+├── sections/ # Hero, About, Skills, Projects, Contact
+├── pages/ # ProjectDetail page
+├── data/ # Project metadata
+├── assets/ # Images & static assets
+└── App.jsx
+```
+
+## 🚀 Projects Included
+
+- **INFOSTACK** — Multi-document Retrieval-Augmented Generation platform
+- **MEDIROUTE AI** — Smart ambulance routing & hospital allocation system
+- **Smart Home Monitoring** — IoT-based gas & environment monitoring
+
+Each project includes:
+- Problem definition
+- Solution approach
+- System architecture
+- Real-world impact
+
+---
+
+## 📬 Contact
+
+The contact form sends emails directly to my inbox and automatically replies to users.
+
+- Email: **manthan10041004@gmail.com**
+- Location: Mohali, India
+- Availability: Open to internships & full-time roles
+
+---
+
+## 🧑‍💻 Running Locally
+
+### Frontend
+```bash
+npm install
+npm run dev
+```
+
+### Backend
+```
+cd server
+npm install
+node index.js
+```
+
+### Create a .env file
+```
+GMAIL_USER=your_email@gmail.com
+GMAIL_APP_PASSWORD=your_app_password
+PORT=your_port_number
+```
+
+> The Gmail App Password is used for secure email delivery and auto-replies.
+
+---
+
+## 📌 Notes
+
+- This project follows a clean, modular architecture for scalability.
+- All UI components maintain a consistent theme across sections.
+- Backend routes are rate-limited to prevent spam and abuse.
+- Scroll position is preserved when navigating between project pages.
+
+---
+
+## 📄 License
+
+This project is open for learning and reference purposes.
+
+---
+
+## 🙌 Acknowledgements
+
+Built and maintained by **Manthan Sharma**  
+Focused on real-world engineering, clarity, and impact.
