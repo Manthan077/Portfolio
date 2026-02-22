@@ -43,7 +43,7 @@ export default function Contact() {
   };
 
   return (
-    <section id="contact" className="relative pt-40 pb-12">
+    <section id="contact" className="relative pt-40 pb-24">
       <motion.div
         initial={{ opacity: 0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -53,21 +53,21 @@ export default function Contact() {
       >
         {/* LEFT */}
         <div className="max-w-xl">
-          <p className="uppercase tracking-[0.3em] text-[11px] text-sky-400/60 mb-8">
+          <p className="uppercase tracking-[0.3em] text-[11px] text-[var(--accent)] mb-8">
             Contact
           </p>
 
-          <h2 className="text-5xl md:text-6xl font-semibold leading-[1.1] mb-10">
+          <h2 className="text-5xl md:text-6xl font-semibold leading-[1.1] mb-10 text-[var(--text-primary)]">
             Let’s build something
             <span className="text-sky-400"> meaningful</span>.
           </h2>
 
-          <p className="text-lg text-slate-400 leading-relaxed mb-14">
+          <p className="text-lg text-[var(--text-secondary)] leading-relaxed mb-14">
             Open to internships, full-time roles, and serious collaborations.
             If you have a role or project worth discussing, feel free to reach out.
           </p>
 
-          <div className="rounded-xl border border-white/10 bg-white/5 p-5 text-sm text-slate-400 font-mono">
+          <div className="rounded-xl border border-[var(--border-color)] bg-[var(--bg-card)] p-5 text-sm text-[var(--text-secondary)] font-mono">
             <p className="text-sky-400/70 mb-3">contact.info</p>
             <p>• Email: manthan10041004@gmail.com</p>
             <p>• Location: Mohali, India</p>
@@ -76,14 +76,14 @@ export default function Contact() {
         </div>
 
         {/* RIGHT */}
-        <div className="w-full rounded-2xl border border-white/10 bg-white/5 backdrop-blur p-8">
+        <div className="w-full rounded-2xl border border-[var(--border-color)] bg-[var(--bg-card)] backdrop-blur p-8">
           {success ? (
             <div className="flex flex-col items-center justify-center text-center py-20">
               <div className="w-12 h-12 rounded-full bg-green-400/10 text-green-400 flex items-center justify-center mb-6">
                 ✓
               </div>
-              <h3 className="text-xl font-semibold mb-2">Message sent</h3>
-              <p className="text-slate-400 max-w-sm">
+              <h3 className="text-xl font-semibold mb-2 text-[var(--text-primary)]">Message sent</h3>
+              <p className="text-[var(--text-secondary)] max-w-sm">
                 Thanks for reaching out. I’ll get back to you soon.
               </p>
             </div>
@@ -142,8 +142,6 @@ export default function Contact() {
           )}
         </div>
       </motion.div>
-
-      <div className="mt-24 h-px w-full bg-gradient-to-r from-transparent via-white/10 to-transparent" />
     </section>
   );
 }
@@ -151,12 +149,12 @@ export default function Contact() {
 function Input({ label, ...props }) {
   return (
     <div>
-      <label className="block text-xs uppercase tracking-widest text-slate-400 mb-2">
+      <label className="block text-xs uppercase tracking-widest text-[var(--text-secondary)] mb-2">
         {label}
       </label>
       <input
         {...props}
-        className="w-full p-4 rounded-xl bg-black/40 border border-white/10 focus:border-sky-400 outline-none transition"
+        className="w-full p-4 rounded-xl bg-[var(--bg-primary)] border border-[var(--border-color)] text-[var(--text-primary)] focus:border-sky-400 outline-none transition"
       />
     </div>
   );
@@ -165,13 +163,13 @@ function Input({ label, ...props }) {
 function Textarea({ label, ...props }) {
   return (
     <div>
-      <label className="block text-xs uppercase tracking-widest text-slate-400 mb-2">
+      <label className="block text-xs uppercase tracking-widest text-[var(--text-secondary)] mb-2">
         {label}
       </label>
       <textarea
         rows="4"
         {...props}
-        className="w-full p-4 rounded-xl bg-black/40 border border-white/10 focus:border-sky-400 outline-none transition resize-none"
+        className="w-full p-4 rounded-xl bg-[var(--bg-primary)] border border-[var(--border-color)] text-[var(--text-primary)] focus:border-sky-400 outline-none transition resize-none"
       />
     </div>
   );

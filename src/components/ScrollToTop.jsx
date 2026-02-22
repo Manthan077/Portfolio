@@ -5,7 +5,10 @@ export default function ScrollToTop() {
   const location = useLocation();
 
   useEffect(() => {
-    window.scrollTo({ top: 0, behavior: "instant" });
+    // Only scroll to top when changing routes, not on initial load
+    if (location.pathname.startsWith("/projects/")) {
+      window.scrollTo({ top: 0, behavior: "instant" });
+    }
   }, [location.pathname]);
 
   return null;

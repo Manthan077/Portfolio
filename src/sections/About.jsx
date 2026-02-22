@@ -14,50 +14,50 @@ export default function About() {
 
         {/* LEFT — EDUCATION TIMELINE */}
         <div>
-          <p className="uppercase tracking-[0.3em] text-[11px] text-sky-400/60 mb-12">
+          <p className="uppercase tracking-[0.3em] text-[11px] text-[var(--accent)] mb-12">
             Education
           </p>
 
           <div className="relative pl-10">
 
-            <div className="absolute left-[7px] top-0 bottom-0 w-px bg-white/10" />
+            <div className="absolute left-[7px] top-0 bottom-0 w-px bg-[var(--border-color)]" />
 
             <div className="space-y-14">
 
               <div className="relative flex items-start gap-6">
                 <span className="mt-2 w-4 h-4 rounded-full bg-sky-400 shrink-0" />
-                <div className="w-full rounded-xl border border-white/10 bg-white/5 backdrop-blur p-6">
-                  <p className="text-white font-medium">
+                <div className="w-full rounded-xl border border-[var(--border-color)] bg-[var(--bg-card)] backdrop-blur p-6">
+                  <p className="text-[var(--text-primary)] font-medium">
                     B.E — Computer Science Engineering
                   </p>
-                  <p className="text-slate-400 text-sm mt-1">
+                  <p className="text-[var(--text-secondary)] text-sm mt-1">
                     Chandigarh University
                   </p>
-                  <p className="text-slate-500 text-xs mt-1">
+                  <p className="text-[var(--text-muted)] text-xs mt-1">
                     CGPA: 8.95
                   </p>
                 </div>
               </div>
 
               <div className="relative flex items-start gap-6">
-                <span className="mt-2 w-4 h-4 rounded-full bg-white/40 shrink-0" />
-                <div className="w-full rounded-xl border border-white/10 bg-white/5 backdrop-blur p-6">
-                  <p className="text-white font-medium">
+                <span className="mt-2 w-4 h-4 rounded-full bg-[var(--text-muted)] shrink-0" />
+                <div className="w-full rounded-xl border border-[var(--border-color)] bg-[var(--bg-card)] backdrop-blur p-6">
+                  <p className="text-[var(--text-primary)] font-medium">
                     Class XII — 93.8%
                   </p>
-                  <p className="text-slate-400 text-sm mt-1">
+                  <p className="text-[var(--text-secondary)] text-sm mt-1">
                     Springdales Public School, Sangrur
                   </p>
                 </div>
               </div>
 
               <div className="relative flex items-start gap-6">
-                <span className="mt-2 w-4 h-4 rounded-full bg-white/40 shrink-0" />
-                <div className="w-full rounded-xl border border-white/10 bg-white/5 backdrop-blur p-6">
-                  <p className="text-white font-medium">
+                <span className="mt-2 w-4 h-4 rounded-full bg-[var(--text-muted)] shrink-0" />
+                <div className="w-full rounded-xl border border-[var(--border-color)] bg-[var(--bg-card)] backdrop-blur p-6">
+                  <p className="text-[var(--text-primary)] font-medium">
                     Class X — 97.4%
                   </p>
-                  <p className="text-slate-400 text-sm mt-1">
+                  <p className="text-[var(--text-secondary)] text-sm mt-1">
                     La Foundation School, Sangrur
                   </p>
                 </div>
@@ -69,16 +69,16 @@ export default function About() {
 
         {/* RIGHT — ABOUT CONTENT */}
         <div>
-          <p className="uppercase tracking-[0.3em] text-[11px] text-sky-400/60 mb-8">
+          <p className="uppercase tracking-[0.3em] text-[11px] text-[var(--accent)] mb-8">
             About
           </p>
 
-          <h2 className="text-5xl md:text-6xl font-semibold leading-[1.1] mb-10 max-w-xl">
+          <h2 className="text-5xl md:text-6xl font-semibold leading-[1.1] mb-10 max-w-xl text-[var(--text-primary)]">
             Building systems with
             <span className="text-sky-400"> clarity & intent</span>.
           </h2>
 
-          <p className="text-lg text-slate-400 leading-relaxed max-w-xl">
+          <p className="text-lg text-[var(--text-secondary)] leading-relaxed max-w-xl">
             I’m a Computer Science Engineering student focused on full-stack
             development, GenAI-powered applications, and problem solving through
             Data Structures and Algorithms.

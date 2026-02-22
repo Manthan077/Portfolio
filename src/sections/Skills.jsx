@@ -3,7 +3,6 @@ import { motion } from "framer-motion";
 export default function Skills() {
   return (
     <section id="skills" className="relative py-40">
-
       <motion.div
         initial={{ opacity: 0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -11,7 +10,6 @@ export default function Skills() {
         transition={{ duration: 0.8, ease: "easeOut" }}
         className="relative max-w-7xl mx-auto px-6 grid lg:grid-cols-[1fr_1.4fr] gap-24 items-start"
       >
-
         {/* LEFT — TEXT */}
         <div>
           <p className="uppercase tracking-[0.3em] text-[11px] text-sky-400/60 mb-8">
@@ -33,58 +31,68 @@ export default function Skills() {
 
         {/* RIGHT — SKILLS GRID */}
         <div className="mt-14 grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
-
           <SkillCard
             title="Core Engineering"
             skills={["C", "C++", "Java", "JavaScript", "TypeScript"]}
+            delay={0}
           />
-
           <SkillCard
             title="Frontend"
             skills={["React", "Tailwind CSS", "HTML", "CSS"]}
+            delay={0.1}
           />
-
           <SkillCard
             title="Backend"
             skills={["Node.js", "Express.js", "REST APIs"]}
+            delay={0.2}
           />
-
           <SkillCard
             title="Databases"
             skills={["MongoDB", "MySQL", "PostgreSQL", "Qdrant"]}
+            delay={0.3}
           />
-
           <SkillCard
             title="AI & GenAI"
             skills={["Generative AI", "RAG", "LangChain", "LangGraph", "Gemini API"]}
+            delay={0.4}
           />
-
           <SkillCard
             title="Tooling"
             skills={["Git", "GitHub", "Docker", "Postman", "VS Code"]}
+            delay={0.5}
           />
-
         </div>
       </motion.div>
     </section>
   );
 }
 
-function SkillCard({ title, skills }) {
+function SkillCard({ title, skills, delay }) {
   return (
-    <div className="h-full rounded-2xl border border-white/10 bg-white/5 backdrop-blur p-6 hover:border-sky-400/40 transition">
-      <p className="text-white font-medium mb-4">{title}</p>
-
+    <motion.div
+      initial={{ opacity: 0, y: 20 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.5, delay }}
+      whileHover={{ scale: 1.05, y: -5 }}
+      className="h-full rounded-2xl border border-[var(--border-color)] bg-gradient-to-br from-[var(--bg-card)] to-[var(--bg-card)] backdrop-blur p-6 hover:border-sky-400/60 hover:shadow-lg hover:shadow-sky-400/10 transition-all duration-300"
+    >
+      <p className="text-[var(--text-primary)] font-semibold mb-4 text-lg">{title}</p>
       <div className="flex flex-wrap gap-2">
-        {skills.map((skill) => (
-          <span
+        {skills.map((skill, i) => (
+          <motion.span
             key={skill}
-            className="px-3 py-1.5 rounded-full text-xs bg-black/40 border border-white/10 text-slate-300"
+            initial={{ opacity: 0, scale: 0.8 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.3, delay: delay + i * 0.05 }}
+            whileHover={{ scale: 1.1 }}
+            className="px-3 py-1.5 rounded-full text-xs bg-[var(--bg-primary)] border border-[var(--border-color)] text-[var(--text-secondary)] hover:border-sky-400/60 hover:text-[var(--text-primary)] transition-all cursor-default"
           >
             {skill}
-          </span>
+          </motion.span>
         ))}
       </div>
-    </div>
+    </motion.div>
   );
 }

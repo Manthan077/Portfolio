@@ -7,6 +7,8 @@ export const projects = [
     title: "INFOSTACK",
     subtitle: "Retrieval-Augmented Generation Platform",
     image: infostack,
+    github: "https://github.com/Manthan077/infostack",
+    demo: "https://infostack.vercel.app/",
 
     overview:
       "INFOSTACK is a production-grade multi-document RAG platform designed to answer queries strictly from user-provided documents while minimizing hallucinations.",
@@ -44,6 +46,8 @@ export const projects = [
     title: "MEDIROUTE AI",
     subtitle: "Smart Ambulance Navigation System",
     image: mediroute,
+    github: "https://github.com/Manthan077/mediroute_ai",
+    demo: "https://medirouteai.vercel.app/",
 
     overview:
       "MEDIROUTE AI is a real-time emergency mobility platform that optimizes ambulance routing and hospital allocation using live traffic and capacity data.",
@@ -79,6 +83,7 @@ export const projects = [
     slug: "smart-home",
     title: "Smart Home Monitoring",
     subtitle: "IoT Environment & Gas Monitoring System",
+    github: "https://github.com/Manthan077",
 
     overview:
       "An IoT-based system for monitoring environmental conditions and gas levels with automated alerts for hazardous situations.",
