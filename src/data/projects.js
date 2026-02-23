@@ -1,5 +1,6 @@
 import infostack from "../assets/projects/infostack.png";
 import mediroute from "../assets/projects/mediroute.png";
+import reforge from "../assets/projects/reforge.png";
 
 export const projects = [
   {
@@ -80,38 +81,41 @@ export const projects = [
   },
 
   {
-    slug: "smart-home",
-    title: "Smart Home Monitoring",
-    subtitle: "IoT Environment & Gas Monitoring System",
-    github: "https://github.com/Manthan077",
+    slug: "reforge",
+    title: "REFORGE",
+    subtitle: "Web Cloning & Customization Platform",
+    image: reforge,
+    github: "https://github.com/Manthan077/reforge",
+    demo: "https://reforge-demo.com",
 
     overview:
-      "An IoT-based system for monitoring environmental conditions and gas levels with automated alerts for hazardous situations.",
+      "ReForge is a powerful web cloning and customization platform that allows you to scrape any website, edit its content in real-time, and export it as a complete, production-ready package.",
 
     problem: [
-      "Lack of real-time gas leakage alerts.",
-      "Manual monitoring is unreliable.",
-      "Delayed response increases risk."
+      "Recreating web designs manually is time-consuming.",
+      "Prototyping requires extensive setup and configuration.",
+      "No easy way to clone and customize existing websites."
     ],
 
     solution: [
-      "Integrated MQ gas sensors with Arduino.",
-      "Real-time monitoring via Blynk mobile app.",
-      "Automated email and mobile alerts."
+      "Built instant website cloning with Puppeteer for accurate extraction.",
+      "Implemented live visual editor for text and image modifications.",
+      "Created smart theme detection with automatic light/dark mode toggle."
     ],
 
     architecture: [
-      "Arduino-based sensor network.",
-      "Blynk mobile dashboard.",
-      "Gmail API for automated alerts."
+      "React frontend with click-to-edit interface.",
+      "Node.js + Express backend with Puppeteer scraping.",
+      "JWT authentication and profile management.",
+      "Complete asset bundling and ZIP export system."
     ],
 
     impact: [
-      "Instant hazard detection.",
-      "Real-time mobile notifications.",
-      "Documented system performance in research paper."
+      "One-click website cloning and customization.",
+      "Real-time editing with instant preview.",
+      "Production-ready exports with all assets included."
     ],
 
-    tech: "Arduino · MQ Sensors · Blynk · IoT",
+    tech: "React · Node.js · Puppeteer · JWT · Express",
   },
 ];
