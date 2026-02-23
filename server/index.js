@@ -30,6 +30,10 @@ const transporter = nodemailer.createTransport({
   },
 });
 
+app.get("/", (req, res) => {
+  res.send("🚀 Portfolio Backend is running");
+});
+
 app.post("/send-email", emailLimiter, async (req, res) => {
   const { name, email, subject, message } = req.body;
 
