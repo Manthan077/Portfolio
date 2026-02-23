@@ -86,7 +86,6 @@ export const projects = [
     subtitle: "Web Cloning & Customization Platform",
     image: reforge,
     github: "https://github.com/Manthan077/reforge",
-    demo: "https://reforge-demo.com",
 
     overview:
       "ReForge is a powerful web cloning and customization platform that allows you to scrape any website, edit its content in real-time, and export it as a complete, production-ready package.",
